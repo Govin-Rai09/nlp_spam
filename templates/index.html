@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NlP_dep</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="con"> NLP with Flask </div>
+
+  <h2>Spam dector</h2>
+<br>
+<br>
+<div class="cont">
+    <form action="{{
+        url_for('predict')
+    }}" method="post">
+<p>Enter your text here</p>
+<textarea name="text" cols="30" rows="10"></textarea>
+<br><br>
+<input type="submit" class="btn-info" value="predict"/>
+</form>
+</div>
+
+
+    
+</body>
+</html>

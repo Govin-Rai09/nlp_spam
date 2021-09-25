@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background: #b4b6b0;
+    padding: 10px 5px;
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+    color: aqua;
+}
+.btn-info{
+    background-color: beige;
+    border: 1px solid lightcoral;
+    overflow: hidden;
+    padding: 2px 2px;
+    
+}
+.btn-info:hover{
+    background: lightseagreen;
+}

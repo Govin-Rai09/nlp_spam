@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NlP_dep</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="con">
+        ML App 
+
+    </div>
+
+    <h2>Spam Dector</h2>
+
+    <br><br>
+    <p style="color:greenyellow; font-size: 20;text-align: center;"> <b> Results for comment</b> </p>
+
+    <div class="res">
+
+        {% if prediction==1 %}
+        <h2 style="color: rgb(192, 145, 24);">Spam</h2>
+        {% elif prediction==0 %}
+        <h2 style="color: blue;"> Its a Ham</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
